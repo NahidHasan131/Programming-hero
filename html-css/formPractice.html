@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name:
+            <input type="text" id="name" name="name" required>
+        </label>
+        <label for="email">Email:
+            <input type="email" id="email" name="email" required>
+        </label>
+        <fieldset>
+            <legend>Pick on</legend>
+            <label for="html">
+                <input type="radio" name="tool" id="html" value="html" checked>HTML
+            </label>
+            <label for="css">
+                <input type="radio" name="tool" id="css" value="css">CSS
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>pick multiple</legend>
+            <label for="js">
+                <input type="checkbox" name="tool" id="js" value="js">JavaScript
+            </label>
+            <label for="python">
+                <input type="checkbox" name="tool" id="python" value="python">Python
+            </label>
+            <label for="java">
+                <input type="checkbox" name="tool" id="java" value="java">Java
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Pick a fruit</legend>
+            <select name="fruit" id="fruit">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Special instruction</legend>
+            <textarea name="instruction" id="instruction" cols="30" rows="5" placeholder="Enter your special instructions here..."></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <input type="button" value="Click Me" onclick="alert('Button clicked!')">
+    </form>
+</body>
+</html>
